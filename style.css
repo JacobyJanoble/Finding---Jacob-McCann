@@ -1,3 +1,4 @@
+/*Page Body*/
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@ body {
     text-align: justify;
 }
 
-ul {
+.box ul {
     margin: 0;
     padding: 0;
 }
@@ -61,6 +62,101 @@ transition: all ease-in-out 250ms;
 .box li a:hover{
     color: #b9b9b9;
 }
+
+/* NAVI BAR*/
+
+.navBar *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: rgba(0, 0, 0, 0.89);
+    font-family: 'Lato', sans-serif;
+}
+
+.navBar {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size:  18px;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a{
+color: white;
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 14px;
+}
+
+.stack{
+    display: none;
+    cursor: pointer;
+}
+
+.stack div{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 6vh;
+        background-color: rgba(0, 0, 0, 0.89);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        }
+    
+        .nav-lings li {
+        opacity: 0;
+    }
+
+    .stack{
+        display: block;
+    }
+    
+}
+
+.nav-active{
+    transform: translateX(0%)
+}
+
 
 /*.resize {
     width: 400px;

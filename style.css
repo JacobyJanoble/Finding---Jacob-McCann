@@ -116,6 +116,7 @@ font-size: 14px;
     height: 3px;
     background-color: white;
     margin: 5px;
+    transition: all 0.5s ease;
 }
 
 @media screen and (max-width:1024px){
@@ -169,7 +170,7 @@ font-size: 14px;
 }
 
 .toggle .line1{
-    transform: rotate(-45deg translate(-5px, 6px));
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2{
@@ -177,5 +178,5 @@ font-size: 14px;
 }
 
 .toggle .line3{
-    transform: rotate(-45deg translate(-5px, -6px));
+    transform: rotate(45deg) translate(-5px, -6px);
 }

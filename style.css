@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(Photos/Samurai.jpeg) no-repeat center center fixed;
+    background: url(Photos/lofi1.png) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ transition: all ease-in-out 250ms;
     color: #b9b9b9;
 }
 
-/* NAVI BAR*/
+/* NAVIGATION BAR*/
 
 .navBar *{
     margin: 0px;
@@ -143,7 +143,7 @@ font-size: 14px;
         transition: transform 0.5s ease-in;
         }
     
-        .nav-lings li {
+        .nav-links li {
         opacity: 0;
     }
 
@@ -157,14 +157,25 @@ font-size: 14px;
     transform: translateX(0%)
 }
 
-
-/*.resize {
-    width: 400px;
-    height: auto;
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
-.resize{
-    width: 300px;
-    height: auto;
-}*/
+.toggle .line1{
+    transform: rotate(-45deg translate(-5px, 6px));
+}
 
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(-45deg translate(-5px, -6px));
+}
